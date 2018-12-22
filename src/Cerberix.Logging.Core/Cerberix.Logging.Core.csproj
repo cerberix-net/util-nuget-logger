@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
+    <Authors>pacjman@cerberix.net</Authors>
+    <Company>cerberix.net</Company>
+    <Description>core logging module for dot net standard</Description>
+    <PackageLicense>https://github.com/cerberix-net/util-nuget-logging/blob/master/LICENSE</PackageLicense>
+    <RepositoryUrl>https://github.com/cerberix-net/util-nuget-logging/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>1.0.0-pre01</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/cerberix-net/util-nuget-logging/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/cerberix-net/util-nuget-logging/master/img/cerberix.png</PackageIconUrl>
+    <PackageId>Cerberix.Logging.Core</PackageId>
+    <Product>Cerberix.Logging.Core</Product>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>
