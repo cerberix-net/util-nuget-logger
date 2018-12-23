@@ -6,7 +6,6 @@
     <Authors>pacjman@cerberix.net</Authors>
     <Company>cerberix.net</Company>
     <Description>nlog logging module for dot net standard</Description>
-    <PackageLicense>https://github.com/cerberix-net/util-nuget-logging/blob/master/LICENSE</PackageLicense>
     <RepositoryUrl>https://github.com/cerberix-net/util-nuget-logging/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Version>1.0.0-pre00</Version>
