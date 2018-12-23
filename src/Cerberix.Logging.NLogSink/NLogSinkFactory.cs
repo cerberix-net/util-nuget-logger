@@ -9,7 +9,7 @@ namespace Cerberix.Logging.NLogSink
         {
             public static ILogSink NewInstance(Type logSinkType)
             {
-                return new NLogSink(NLog.LogManager.GetCurrentClassLogger(loggerType: logSinkType));
+                return new Logic.NLogSink(NLog.LogManager.GetCurrentClassLogger(loggerType: logSinkType));
             }
         }
     }

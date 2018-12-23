@@ -2,7 +2,7 @@
 using Cerberix.Logging.Core;
 using NLog;
 
-namespace Cerberix.Logging.NLogSink
+namespace Cerberix.Logging.NLogSink.Logic
 {
     internal class NLogSink : ILogSink
     {
