@@ -3,12 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
-    <Authors>pacjman@cerberix.net</Authors>
+    <Authors>hai@cerberix.net</Authors>
     <Company>cerberix.net</Company>
     <Description>nlog logging module for dot net standard</Description>
     <RepositoryUrl>https://github.com/cerberix-net/util-nuget-logging/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.0-pre01</Version>
+    <Version>1.1.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cerberix.Logging.Core" Version="1.0.0-pre01" />
+    <PackageReference Include="Cerberix.Logging" Version="1.1.1" />
     <PackageReference Include="NLog" Version="4.5.11" />
   </ItemGroup>
 

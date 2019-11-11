@@ -1,5 +1,5 @@
 ﻿using System;
-using Cerberix.Logging.Core;
+using NLog;
 
 namespace Cerberix.Logging.NLogSink
 {
@@ -7,9 +7,42 @@ namespace Cerberix.Logging.NLogSink
     {
         public static class NLoggerFactory
         {
-            public static ILogSink NewInstance(Type logSinkType)
+            public static ILogSink NewInstance(Type loggerType)
             {
-                return new Logic.NLogSink(NLog.LogManager.GetCurrentClassLogger(loggerType: logSinkType));
+                return new NLogSink(LogManager.GetCurrentClassLogger(loggerType: loggerType));
+            }
+        }
+
+        private class NLogSink : ILogSink
+        {
+            private readonly Logger _logger;
+            public NLogSink(Logger logger)
+            {
+                _logger = logger;
+            }
+
+            public void Log(LogSeverity severity, string message, Exception exception = null)
+            {
+                switch (severity)
+                {
+                    case LogSeverity.Debug:
+                        _logger.Debug(exception, message);
+                        break;
+                    case LogSeverity.Info:
+                        _logger.Info(exception, message);
+                        break;
+                    case LogSeverity.Warn:
+                        _logger.Warn(exception, message);
+                        break;
+                    case LogSeverity.Error:
+                        _logger.Error(exception, message);
+                        break;
+                    case LogSeverity.Fatal:
+                        _logger.Fatal(exception, message);
+                        break;
+                    default:
+                        throw new NotImplementedException($"Unsupported log severity: {severity.ToString()}");
+                }
             }
         }
     }
