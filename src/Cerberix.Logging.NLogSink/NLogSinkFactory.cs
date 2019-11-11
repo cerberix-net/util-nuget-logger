@@ -3,17 +3,14 @@ using NLog;
 
 namespace Cerberix.Logging.NLogSink
 {
-    public class NLogSinkFactory
+    public static class Factory
     {
-        public static class NLoggerFactory
+        public static ILogSink NewInstance(Type loggerType)
         {
-            public static ILogSink NewInstance(Type loggerType)
-            {
-                return new NLogSink(LogManager.GetCurrentClassLogger(loggerType: loggerType));
-            }
+            return new NLogSink(LogManager.GetCurrentClassLogger(loggerType: loggerType));
         }
 
-        private class NLogSink : ILogSink
+        internal class NLogSink : ILogSink
         {
             private readonly Logger _logger;
             public NLogSink(Logger logger)
