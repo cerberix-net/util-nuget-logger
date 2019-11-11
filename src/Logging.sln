@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Logging.Core", "Cerberix.Logging.Core\Cerberix.Logging.Core.csproj", "{0DF77BDD-DA18-4850-BF3D-11FB823BFDE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Logging", "Cerberix.Logging\Cerberix.Logging.csproj", "{0DF77BDD-DA18-4850-BF3D-11FB823BFDE6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cerberix.Logging.NLogSink", "Cerberix.Logging.NLogSink\Cerberix.Logging.NLogSink.csproj", "{5CD5DA99-56E4-4059-95DE-1B8539531EFF}"
 EndProject
